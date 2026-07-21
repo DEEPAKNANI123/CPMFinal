@@ -1,9 +1,5 @@
 {
   "services": {
-    "frontend": {
-      "root": ".",
-      "framework": "vite"
-    },
     "backend": {
       "root": "backend",
       "entrypoint": "server.js"
@@ -14,12 +10,6 @@
       "source": "/api/(.*)",
       "destination": {
         "service": "backend"
-      }
-    },
-    {
-      "source": "/(.*)",
-      "destination": {
-        "service": "frontend"
       }
     }
   ]
