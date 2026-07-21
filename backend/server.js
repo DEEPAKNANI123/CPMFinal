@@ -602,3 +602,5 @@ app.listen(PORT, async () => {
     console.error("Database connection check failed:", err.message);
   }
 });
+
+module.exports = app;
